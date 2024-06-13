@@ -1,2 +1,5 @@
-# MusicCaculator
-A simple music caculator for play music
+# 音乐计算器
+
+目前仅支持C大调。点击Music,通过按下键盘上的小键盘来演奏。
+点击record可以开始录制为midi，再次点击下载录制好的midi文件。
+不推荐你真的拿来当计算器（真有人拿这个当计算器吗？！）

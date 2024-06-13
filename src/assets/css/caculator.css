@@ -1,0 +1,279 @@
+@font-face {
+    font-family: 'LCD';
+    src: url('../fonts/digifaw.ttf') format('truetype');
+  }
+  
+
+*{
+  outline: none;
+
+}
+
+/* 
+  #outer{
+    width: 100%;
+    height: 0;
+    padding-bottom: 30%;
+  } */
+
+
+
+    #caculator-frame{
+        width: 100%;
+        position: relative;
+        margin: auto;
+        border-radius: 12px;
+        box-shadow: 4px 4px 10px 2px #888888;
+    }
+
+    .caculator-top{
+        width: 100%;
+        height: 25%;
+        background-color: rgb(36, 36, 36);
+        position: relative;
+        margin: auto;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .info{
+        width: 100%;
+        height: 30%;
+        /* display: flex; */
+        position: relative;
+
+    }
+    #top-mess{
+        text-align: left;
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+        /* padding-left: 5%; */
+        font-style: oblique; 
+        text-decoration: none;
+        font-size: 18px;
+        position: absolute;
+        left: 5%;
+        bottom: 0%;
+    }
+
+    .input{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input-inner{
+        width: 90%;
+        height: 70%;
+        margin-bottom: 5%;
+        border-radius: 8px;
+        background-color: rgb(205, 221, 210);
+        color:rgb(1,7,0);
+        box-shadow:
+        inset 2px 2px 1px 0px rgb(91, 105, 96);
+        
+
+    }
+
+    /* 显示区顶部信息栏 */
+    .inner-mess{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    
+
+    .info{
+        display: inline-block;
+        /* padding-left: 20%; */
+        text-align: center;
+        font-size: 12px;
+    }
+
+    /* .info .time-num{
+
+    } */
+
+    #music-mode{
+        position: absolute;
+        right: 5%;
+        font-size: 12px;
+    }
+    #record-mode{
+        position: absolute;
+        left: 5%;
+        font-size: 12px;
+    } 
+    .inner-count{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        font-family: 'LCD',sans-serif;
+        font-size: 48px;
+        line-height: 100%;
+        flex-direction: row
+    }
+
+    /* 数字显示模块 */
+    #inner-num{
+        padding-top: 10px;
+        padding-right: 10px;
+        width: 100%;
+        text-align: right;
+        overflow: hidden;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+        
+    }
+
+    #inner-num{
+        font-size: 48px;
+        white-space: nowrap;
+    }
+
+    .caculator-bottom{
+        width: 100%;
+        height: 75%;
+        background-color:rgb(224, 225, 225);
+        border-radius: 0 0 12px 12px;
+
+    }
+
+    .music-ui{
+        height: 20%;
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .music-ui .mu-btn{
+        height: 35%;
+        width: 25%;
+        margin:10%;
+        border-radius: 30px;
+        font-weight: bolder;
+        font-size: 24px;
+        background-color: rgb(36, 36, 36);
+        border: none;
+        color: whitesmoke;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+        box-shadow:
+        inset 1px 1px 1px 0px whitesmoke,
+        /* inset -1px -1px 1px 0px rgb(49, 49, 49), */
+        1px 1px 3px 0px rgb(49, 49, 49);
+    }
+    .music-ui .mu-btn-center{
+        width: 50%;
+        height: 50%;
+        border-radius: 30px;
+        font-weight: bolder;
+        font-size: 32px;
+        background-color: rgb(36, 36, 36);
+        border: none;
+        color: whitesmoke;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+        box-shadow:
+        inset 1px 1px 1px 0px whitesmoke,
+        /* inset -1px -1px 1px 0px rgb(49, 49, 49), */
+        1px 1px 3px 0px rgb(49, 49, 49);
+    }
+    .mu-btn:active{
+        box-shadow: none;
+        text-shadow: none;
+        color:#cccccc;
+    }
+    .mu-btn-center:active{
+        box-shadow: none;
+        text-shadow: none;
+        color:#cccccc;
+    }
+    .caculator-ui{
+        height: 80%;
+
+    }
+
+    .num-ui{
+        width: 100%;
+        height: 100%;
+        padding: 0 5% 5% 5%;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .caculator-key{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .caculator-key-button{
+        text-align: center;
+        width: 80%;
+        height: 50%;
+        border-radius: 30px;
+        font-weight: bolder;
+        background-color: rgb(36, 36, 36);
+        border: none;
+        color: whitesmoke;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+        box-shadow:
+        inset 1px 1px 1px 0px whitesmoke,
+        /* inset -1px -1px 1px 0px rgb(49, 49, 49), */
+        1px 1px 3px 0px rgb(49, 49, 49);
+    }
+    
+    
+    .caculator-bottom .white-button{
+        background-color: whitesmoke;
+        color: black;
+
+    }
+    .white-button:active{
+        box-shadow: none;
+        text-shadow: none;
+        color:whitesmoke;
+        background-color: rgb(255, 145, 0);
+    }
+    .other-button:active{
+        box-shadow: none;
+        text-shadow: none;
+        color:#cccccc;
+    }
+    .c-other-button{
+        box-shadow: none;
+        text-shadow: none;
+        color:#cccccc;
+    }
+    .c-white-button{
+        box-shadow: none;
+        text-shadow: none;
+        color:whitesmoke;
+        background-color: rgb(255, 145, 0);
+    }
+
+
+    @media (max-width: 768px) {
+        #caculator-frame {
+            width: 100vw;
+            height: 100vh; /* 使得宽高比为6:8 */
+        }
+        .caculator-key-button{
+            font-size: 18px;
+        }
+    }
+
+    @media (min-width: 769px) {
+        #caculator-frame {
+            width: 600px;
+            max-width: 600px;
+            height: 800px;
+    }
+    .caculator-key-button{
+        font-size: 24px;
+    }
+    }
